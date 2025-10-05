@@ -1,5 +1,10 @@
 package com.example.lab_week_06
 
+import android.view.LayoutInflater
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.example.lab_week_06.model.CatModel
+import android.view.ViewGroup
 class CatAdapter(private val layoutInflater: LayoutInflater, private val
 imageLoader: ImageLoader) : RecyclerView.Adapter<CatViewHolder>() {
     //Mutable list for storing all the list data
@@ -8,8 +13,7 @@ imageLoader: ImageLoader) : RecyclerView.Adapter<CatViewHolder>() {
     fun setData(newCats: List<CatModel>) {
         cats.clear()
         cats.addAll(newCats)
-//This is used to tell the adapter that there's a data change in the
-        mutable list
+//This is used to tell the adapter that there's a data change in the mutable list
                 notifyDataSetChanged()
     }
     //A view holder is used to bind the data to the layout views
