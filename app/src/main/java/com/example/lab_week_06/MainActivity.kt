@@ -61,9 +61,59 @@ class MainActivity : AppCompatActivity() {
                     "Curious George",
                     "Award winning investigator",
                     "https://cdn2.thecatapi.com/images/bar.jpg"
+                ),
+                CatModel(
+                    Gender.Female,
+                    CatBreed.BalineseJavanese,
+                    "Luna",
+                    "Energetic and always curious about everything.",
+                    "https://cdn2.thecatapi.com/images/MTY3ODIyMQ.jpg"
+                ),
+                CatModel(
+                    Gender.Male,
+                    CatBreed.ExoticShorthair,
+                    "Simba",
+                    "Loves naps and being the center of attention.",
+                    "https://cdn2.thecatapi.com/images/MTY3ODI2MQ.jpg"
+                ),
+                CatModel(
+                    Gender.Female,
+                    CatBreed.AmericanCurl,
+                    "Mimi",
+                    "Sweet but loves to knock things off tables.",
+                    "https://cdn2.thecatapi.com/images/9l6.jpg"
+                ),
+                CatModel(
+                    Gender.Male,
+                    CatBreed.BalineseJavanese,
+                    "Oscar",
+                    "Loves climbing curtains and chasing bugs.",
+                    "https://cdn2.thecatapi.com/images/1f7.jpg"
+                ),
+                CatModel(
+                    Gender.Unknown,
+                    CatBreed.ExoticShorthair,
+                    "Shadow",
+                    "Mysterious cat who appears only during midnight.",
+                    "https://cdn2.thecatapi.com/images/ah2.jpg"
+                ),
+                CatModel(
+                    Gender.Male,
+                    CatBreed.AmericanCurl,
+                    "Leo",
+                    "Loves food more than people, but still cute.",
+                    "https://cdn2.thecatapi.com/images/6qi.jpg"
+                ),
+                CatModel(
+                    Gender.Female,
+                    CatBreed.ExoticShorthair,
+                    "Cleo",
+                    "Queen of the house with a gentle heart.",
+                    "https://cdn2.thecatapi.com/images/bpc.jpg"
                 )
             )
         )
+
     }
 //This will create a pop up dialog when one of the items from the recycler view is clicked.
     private fun showSelectionDialog(cat: CatModel) {
